@@ -1,0 +1,80 @@
+po <!DOCTYPE html> daje sie specyfikacje xd
+<html> znacznik otwierający
+</html> zamknięcie znacznika
+<html lang="pl">
+
+<!-- (początek komentarza wielowierszowego)
+--> (koniec komentarza)
+
+<head> (nagłówek strony - nie jest wyświetlana, nie jest miejscem na treść strony)
+</head>
+<title>Podstawy HTML</title>  (lepsze pozycjonowanie)
+<meta charset="utf-8" /> (ascii)
+
+<body> (treść strony)
+</body>  
+
+file://..... (ja przeglądam plik lokalny, który jest zapisany u mnie na dysku)
+ tylko w <body> :
+<h1>Nagłówek 1 <h/1>
+znaczników h jest 6
+<p> </p> (paragraf)
+
+()=>{;}
+to samo co:
+function(){;}
+
+%("selektor").akcja(function(){
+    działania;
+});
+
+Dołączanie jQuery do strony
+
+cdn(Content Delivery Network)
+
+Metody jQuery:
+.hide()
+.show()
+.toggle() - łączy metody hide i show
+.fadeIn()
+.fadeOut()
+
+
+BAZY DANYCH
+
+Tabela składa się z pól
+pole - kolumna zaiwerająca dane okreslonego typu (np. tekstowego)
+pola łączą się w sensowną całość
+zbiór wszystkich pól nazywa się rekordem, dotyczący jednego obiektu
+Dobrze zaprojektowana baza danych: 
+powinna zawierać minimum pamięci(im zawierają mniej miejsca tym lepiej bo zajmuja mniej miejsca)
+baza powinna być wydajn*-a
+baza powinna być spójna
+
+RELACYJNA BAZA DANYCH
+to baza która powstaje poprzez przeanalizowanie danych
+sklada się z wielu tabel połaczonych relacjami
+
+JĘZYK SQL
+strukturalny język zapytań stosowany w bazach danych
+
+Systemy/Silniki baz danych
+- mySQL
+- MariaDB(najpopularniejszy silnik OpenSource)
+- PostgreSQL(najpopularniejszy silnik OpenSource)
+- Oracle(najpopularniejszy silnik korporacyjny)
+- SQLite(nie trzeba serwera, wystarczy odpowiednia biblioteka, wystarczy skopiować plik, wewnętrznie przechowuje wszystkie dane jako tekst)
+
+Typy danych:
+
+Liczbowe
+integer - liczby całkowite
+float, real lub decimal - liczby zmiennoprzecinkowane
+
+Tekstowe
+text[20], varchar[20](jaka jest długość np. 20 znaków)
+string
+
+Data i czas
+date - data, np. w dormacie ISO, np. 2015-01-16
+DateTime - data i czas

@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-02T12:17:06+01:00
+
+====== Klient-Serwer ======
+Created piątek 02 luty 2018
+
+===== Serwer - "komputer" udostepniający zasoby =====
+
+=== DNS - Domain Name System bez tej usługi w praktyce nie jesteśmy w stanie dotrzeć do żadnego serwera, port 53 ===
+
+===== dig (nazwa strony) =====
+
+=== usługa http - port 80, WorldWideWeb, komunikacja w zakresie stron WWW ===
+
+protokój - "język" porozumiewania się klienta z serwerem, protokoły definiowane są w dokumentach RFC
+
+Adres IP, np. publiczny 221.34.2.10 liczby z zakresu od 0 do 255 oddzielone kropkami
+
+Port - liczba naturalna identyfikująca usułgę na serwerze, well known ports 0-1024 zob.                 [[/etc/services]]
+
+===== Lokalny Serwer HTTP =====
+python -m [[SimpleHTTPServer]]
+python3 -m http.server
+
+W protokole http mamy 2 podstawowe metody które sa wykorzystywane: 
+1. get - stosujemy wtedy kiedy serwer ma nam zwrócic pewną informację
+
+.ico - plik obrazkowy dzięki, któremu nasza strona ma fajny obrazek (zdjęcie ma rozszerzenie .png)
+
+URI => URL
+http://lo1.sandomierz.pl/szukaj?words=parnas&search=
+
+http:// - protokół
+lo1.sandomierz.pl - (pełnodomenowa) nazwa serwera
+[[/szukaj]] - zasób na serwerze (może być również dobrze w jakimś pod katalogu np. [[/ankiety/szukaj]])
+
+? - początek listy parametrów
+
+words=parnas - parametr w formacie nazwa = wartość
+
+& - znak służacy rozdzielaniu parametrów
+
+search= - parametr ma nazwę ale nie ma wartości
+
+[[http://lo1.sandomierz.pl/szukaj?words=parnas&search|?words=parnas&search]]
+
+2. POST - jeżeli serwer ma dostać jakąś informację i ta informacja zmienia stan strony to wtedy używamy POST
+
+https://www.google.pl/search?client=ubuntu&channel=fs&q=apache&ie=utf-8&oe=utf-8&gfe_rd=cr&dcr=0&ei=tVd0WvKzH4ulX9OMhvAE
+
+https:// = HTTP + SSL
