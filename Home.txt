@@ -1,0 +1,74 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:08:14+02:00
+
+====== Lekcja #1 06.09.2018r. ======
+Created czwartek 06 września 2018
+
+Język programowania niskiego poziomu(assemblery):
+mov ecx, 50
+dec ecx
+push eax
+pop ecx
+or ecx, eax
+
+[ecx, eax] - rejestry procesora
+
+Języki wysokiego poziomu stworzono na bazie assemblerów.
+
+Programowanie to mówienie komputerowi co ma robić i w jakich kolejnościach.
+
+==== 1970 - 1979(ważne daty): ====
+- język C(1971) - aktualny
+- język C++(1983) - ewoluował C, ponieważ dostał obiektowość
+- język Pascal(1970) - powstał aby uczyć programowania
+
+==== Od kodu do programu: ====
+
+1. Kod źródłowy np.: if(liczba_pkt >50)...
+2. Kompilator(kompilacja)
+3. Kod maszynowy: 00111001... <---> Dodatkowe biblioteki i moduły
+4. Linker(konsolidacja)
+5. program.exe - działająca aplikacja
+
+Kompilator to program napisany przez twórców danego języka, sprawdza poprawność i kompiluje kod do kodu maszynowego. 
+
+Napisany przez programistę kod poddawany jest kompilacji. Po sprawdzeniu poprawności kodu kompilator przekształca go na kod maszynowy. Następnie linker łaczy z kodem potrzebne do jego działania biblioteki i tworzy plik wykonywalny aplikacji. Rozszerzenie .exe jest umowne i charakterystyczne dla systemu Windows.
+
+Jeżeli program jest kompilowany w 64 bitowym środowisku Linux to nie otworzy się go w środowisku Windows ponieważ ma inne biblioteki. Obchodzi się to kompilując dany kod na różnych platformach. Druga metoda to taka że programiści stosują biblioteki które da się zainstalować na danej platformie chrakterystyczne dla innych platformach.
+
+Kod napisany w Pythonie, Javie czy Javascripcie jest interpretowany. Są języki interpretowane przez interpreter lub kompilowane przez kompilator. Programy napisane w językach interpretowanych są zazwyczaj wolniejsze.
+
+==== Jak powstaje program: ====
+Zadania programu:
+1. Obliczenie pola
+2. Obliczenie objętości
+3. ...
+
+ALGORYTM:
+1. Pobierz promień → START
+2. Oblicz pole               pobierz r
+3. Wyświetl pole          oblicz pole
+4. ...                                wyświetl pole
+int main(){
+int pole;
+cin >> r;
+pole = r*r + 3;
+cout << pole;}         <-- KONIEC
+
+
+Algorytmem nazywamy skończony ciąg czynności, przekształcający zbiór danych wejściowych na zbiór danych wyjściowych. np. : przekształca promień koła na pole koła
+
+Algorytmy, które wykonują działania matematyczne na danych liczbowych, nazywamy algorytmami numerycznymi.
+
+Algorytmy, w których kolejność czynności jest zawsze taka sama i niezależna od wartości danych wejściowych, nazywamy algorytmami sekwyncyjnymi lub inaczej liniowymi.
+
+==== Elementy schematu blokowego ====
+START                     <-- Blok graniczny - początek algorytmu
+x = 10                      <-- Blok operacyjny - operacje zmieniające wartości zmiennych
+Wypisz x                 <-- Blok wejścia/wyjścia - operacje wprowadzania i wyprowadzania danych (figura równoległoboku)
+(Nie )x = 100 (Tak) <-- Blok decyzyjny - wybór jednej z dwóch możliwych dróg działania
+STOP                       <-- Blok graniczny - koniec algorytmu
+
+==== Specyfikacja problemu ====
+Specyfikacją problemu algorytmicznego nazywamy dokładny opis zadania, które ma zostać rozwiązane, oraz podanie danych wejściowych i danych wyjściowych wraz z ich typami.
