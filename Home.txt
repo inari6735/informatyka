@@ -72,3 +72,6 @@ STOP                       <-- Blok graniczny - koniec algorytmu
 
 ==== Specyfikacja problemu ====
 Specyfikacją problemu algorytmicznego nazywamy dokładny opis zadania, które ma zostać rozwiązane, oraz podanie danych wejściowych i danych wyjściowych wraz z ich typami.
+
+
+

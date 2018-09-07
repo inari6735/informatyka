@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T14:07:43+02:00
+
+====== Python ======
+Created piątek 07 września 2018
+
+W konsoli wpisując komendę:
+		python3 (nazwa pliku .py) - można otworzyć ten plik w terminalu
+
