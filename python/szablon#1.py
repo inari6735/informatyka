@@ -6,10 +6,17 @@
 def main(args):
     # a = 0 # inicjacja zmiennej
     
-    a = input('Podaj liczbę: ')
-    print(a)
+    a = int(input('Podaj 1. liczbę: '))
+    b = int(input('Podaj 2. liczbę: '))
+
+    print("Suma =", a + b)
+    print("Różnica =", a - b)
+    print("Iloczyn =", a * b)
+    print("Iloraz =", a / b)
     
     return 0
+    
+    # duck typing
 
 if __name__ == '__main__':
     import sys
