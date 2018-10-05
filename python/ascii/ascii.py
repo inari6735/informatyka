@@ -5,37 +5,17 @@
 
 
 def main(args):
+    cm = int(input("Ile cm: "))
+    
     print("   ___  ")
     print("  / | \ ")
     print(" |     | ")
     print("  \   / ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
-    print("  |   | ")
+    for i in range(cm):
+        print("  |   | ")
     print(" /     \ ")
     print("|   |   | ")
     print(" \ / \ / ")
-    
-    print("    __________________________ ")
-    print("   /             |            \ ")
-    print("  /              |             \ ")
-    print(" /               |              \ ")
-    print("/                                \ ")
-    print("|                                |")
-    print("|                                |")
-    print("|                                |")
-    print("\                                /")
-    print(" \                              /")
-    print("  \                            /")
-    print("  \                            /")
     
     return 0
 

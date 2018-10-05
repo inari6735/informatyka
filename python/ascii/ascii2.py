@@ -2,22 +2,46 @@
 # -*- coding: utf-8 -*-
 #
 #  ascii2.py
+
 def prostokat1(x, y):
-    for i in range(y):
-        for j in range(x):
+    for i in range(x):
+        for j in range(y):
+            print("#", end='')
+        print()    
+        
+def prostokat2(x, y):
+    for i in range(x):
+        for j in range(y):
             if j == 0 or j == y - 1:
                 print("#", end='')
             else:
-                print(" ")    
-        print()    
+                print(" ", end='')    
+        print()
 
+def choinka1(h, znak):
     
+    for i in range(h):
+        for j in range(i + 1):
+            print(znak, end = '')
+        print()
+        
+def choinka2(h, znak):
+    
+    for i in range(h):
+        for j in range(h - i):
+            print(znak, end = '')
+        print()
     
     
 def main(args):
     x = int(input("X: "))
     y = int(input("Y: "))
-    prostokat1(x,y)
+    h = int(input("Wysokość choinki: "))
+    znak = input("Znak: ")
+    prostokat1(x, y)
+    prostokat2(x,y)
+    choinka1(h, znak)
+    choinka2(h, znak)
     print()
     
     return 0
