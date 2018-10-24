@@ -18,9 +18,9 @@ def main(args):
     a = int(input("Podaj a: "))
     b = int(input("Podaj b: "))
     print(euklides(a, b))
-    
+
     return 0
-    
+
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
