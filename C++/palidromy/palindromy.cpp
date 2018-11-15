@@ -10,12 +10,11 @@
 using namespace std;
 
 bool palindrom(char wyraz[], int rozmiar){ // funkcja zwraca PRAWDA albo FAŁSZ
-    bool pal = True;
-    int d;
-    d = rozmiar / 2;
-    for(int i = 0; i < d; i ++){
-        if(w[i] != w[d - i - 1]){
-            pal = False;
+    bool pal = true;
+    for(int i = 0; i < w; i ++){
+        if(w[i] != w[romiar - i - 1]){
+            pal = false;
+            break;
         };
     };
     return pal;
