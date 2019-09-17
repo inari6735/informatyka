@@ -1,0 +1,19 @@
+Rozdzielanie wierszy w arkuszu kalkulacyjnym:
+Dane/Tekst jako kolumny
+
+Funkcje tekstowe w arkuszu:
+DŁ- długość tekstu
+FRAGMENT.TEKSTU
+LEWY, PRAWY - zwraca początkowe i końcowe znaki tekstu
+=LEWY(E2;DŁ(E2)-7)
+
+Filtry:
+Dane/Więcej filtrów/filtr standardowy - opcja "Bez duplikatów"
+Dane/Sortuj
+
+PODAJ.POZYCJĘ
+=PODAJ.POZYCJĘ(D2;O$2:O$11) 0$2:0$11 - $ blokowanie pozycji
+
+Skróty:
+F4 - przełączanie blokowania komórek w formule
+CTRL+SHIFT+strzałka w dół - zaznaczenie serii danych w kolumnie
